@@ -3,11 +3,11 @@ Adaptive Behavioral Simulation of Creatures In Changing Environments Using Selec
 
 
 # The Simulation...
-We have a island surrounded with the ocean and creatures scattered, and we have 2 seasons, in the summer, food becomes more on the island and less in ocean, [food grows on trees]. In the winter, food becomes more in the ocean but less on the island, those creatures will try to adapt in a manner in which they will make uses of the available amount of food in both seasons as food is there top priority to survive and reproduce. So they will mostly need to go to the ocean and get food in winters, and in summers they will live on land mostly and get food, but there is a catch. 
+We have an island surrounded with the ocean and creatures scattered, and we have 2 seasons, in the summer, food becomes more on the island and less in ocean, [food grows on trees]. In the winter, food becomes more in the ocean but less on the island, those creatures will try to adapt in a manner in which they will make uses of the available amount of food in both seasons as food is there top priority to survive and reproduce. So they will mostly need to go to the ocean and get food in winters, and in summers they will live on land mostly and get food, but there is a catch. 
 
-In summer, if they all stayed on land there will still not be enough food to feed them all, some will have to dive in the ocean and get food, but there are predators in the ocean and the creatures may be hunted down and eaten. In the winter, were food is more in the ocean, if they stayed in the ocean the predators will eat them all. So essentially, they have to establish a strategy of how to manage resources and there goal is to survive and reproduce. 
+In the summer, if they all stayed on land there will still not be enough food to feed them all, some will have to dive in the ocean and get food, but there are predators in the ocean and the creatures may be hunted down and eaten. In the winter, where food is more in the ocean, if they stayed in the ocean the predators will eat them all. So essentially, they have to establish a strategy of how to manage resources and their goal is to survive and reproduce. 
 
-We could introduce a new class of builder creatures which can cut down food trees and build rafts on the island, this will help them use the raft to travel across the ocean to get food, rafts substantially lowers the chance of the creature being killed by predators, but trees will be less on land due to trees being cut down and deforestaion [1 raft = -1 tree], therefore, even less food on land. Trees could grow back after sometime, but the creatures could die from hunger during this time frame.
+We could introduce a new class of builder creatures which can cut down food trees and build rafts on the island, this will help them use the raft to travel across the ocean to get food, rafts substantially lowers the chance of the creature being killed by predators, but trees will be less on land due to trees being cut down and deforestation [1 raft = -1 tree], therefore, even less food on land. Trees could grow back after some time, but the creatures could die from hunger during this time frame.
 
 # Recap
 Creatures: [3 types]
@@ -20,7 +20,7 @@ Season: [2 Types]
 2. Winter
 
 Resources: [1 type] 
-1. Food
+1. Food [Grows on trees random range of 2-4 per tree]
 
 Tools: [2 types]
 1. Free diving
