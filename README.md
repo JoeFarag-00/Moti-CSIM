@@ -1,5 +1,5 @@
 # Moti-Based-Culture-Simulation
-Modeling Adaptive Human Behavior Under Resource Scarcity Using Multi-Objective Generative Agents ![image](https://github.com/JoeFarag-00/Moti-Based-CSIM/assets/88057098/6eec8825-63c0-44be-a9b4-ca0da22c8e6e)
+![image](https://github.com/JoeFarag-00/Moti-Based-CSIM/assets/88057098/6eec8825-63c0-44be-a9b4-ca0da22c8e6e)
 
 
 # The Simulation...
