@@ -4,6 +4,7 @@ from agent.simulation import LLM, create_new_memory_retriever, interview_agent
 from vland.vlandapi import VlandAPI
 from vland.eventbus import EventBus
 from vland.data import agentData
+# from Resources.Fuel import ResourceNeed
 
 import threading
 
@@ -30,6 +31,7 @@ class VlandAgent:
     AgentInfo = {}
     runtime = 0
     Do_Once = False
+    Agent_Appetite = []
 
     def __init__(self, player, vland, eventbus, initArea, fail):
         self.vland: VlandAPI = vland
@@ -62,8 +64,9 @@ class VlandAgent:
             memory = self.memory
         )
         print(colored(f"{self.Agent.name} generated successfully!", 'blue', attrs=['bold']))
-    
 
+        # Agent_Appetite = ResourceNeed()
+    
         self.vland.born_in_space(self.AgentInfo, area="Spawn")
         
 
@@ -219,6 +222,7 @@ class VlandAgent:
                 _, reaction, area = self.Agent.generate_reaction(Ndisclaim, self.Current_Areas)
                 print(colored(Ndisclaim, "red"), colored(area, "blue"), reaction)
                 print(colored(f"Resource Area {area} CONSUMED", "red"))
+                
 
         elif not area or area == "None":
             # self.Early_Stop+=1
@@ -235,7 +239,7 @@ class VlandAgent:
             prev_react = reaction
         except:
             pass
-        
+        # print("Current Resources:",self.Current_Areas)
         self.log_reactions(observation, area, reaction)
         self.eventbus.publish("action", notice)
 
